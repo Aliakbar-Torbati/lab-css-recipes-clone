@@ -7,14 +7,30 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
 }
+h1 {
+  font-size: 50px;
+}
+
 .heading {
-  background: url("../images/soup.jpg");
+  background: center no-repeat url("../images/soup.jpg");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 500px;
+  background-size: cover;
+  margin: 30px 50px 90px 50px;
 }  
+
 .section {
   margin: 30px 100px;
-
-
 }
+
+p {
+  text-align: left;
+}
+
 .imgClass {
   min-width: 300px;
   max-width: 500px;
@@ -29,5 +45,14 @@ html {
 
 .ulClass{
   list-style-type: none;
-  
+}
+
+ol {
+  counter-reset: list;
+  list-style: none;
+}
+
+ol li:before {
+  content: counter(list)") ";
+  counter-increment: list;
 }
