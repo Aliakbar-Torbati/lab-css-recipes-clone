@@ -8,6 +8,26 @@ html {
   font-size: 18px
 }
 .heading {
-  background: url('../images/soup.jpg');
+  background: url("../images/soup.jpg");
+}  
+.section {
+  margin: 30px 100px;
+
+
+}
+.imgClass {
+  min-width: 300px;
+  max-width: 500px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hrClass{
+  width: 85%;
+}
+
+.ulClass{
+  list-style-type: none;
   
 }
